@@ -1,0 +1,22 @@
+{
+  "name": "mutor",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "keywords": [
+    "immutable",
+    "ramda",
+    "functional",
+    "object",
+    "typed"
+  ],
+  "author": "sliv <sliv.mbp@gmail.com>",
+  "license": "MIT"
+}

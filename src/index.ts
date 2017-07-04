@@ -23,10 +23,10 @@ export type MutorInstance<T> =
     (x: T[k]): PatchFn<T>
     (f: PatchFn<T[k]>): PatchFn<T>
   }};
-``
+
 export function Mutor<T> (keys: (keyof T)[]): MutorInstance<T> {
   const reducer = (o, k) => {
-    o[k] = (a) => (t) => merge(t)({ [k]: toFnWithArg(a, t[k]) });
+    o[k] = (a) => (t) => merge({ [k]: toFnWithArg(a, t[k]) })(t);
     return o;
   };
   return Object.assign(keys.reduce(reducer, {}), { merge });
