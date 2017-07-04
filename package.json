@@ -1,7 +1,7 @@
 {
   "name": "mutor",
   "version": "0.0.1",
-  "description": "",
+  "description": "typed immutability helper for typescript",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
